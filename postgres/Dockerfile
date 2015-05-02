@@ -5,4 +5,4 @@ RUN apt-get update && \
     apt-get install -y postgresql && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-VOLUME ["/etc/postgresql", "var/lib/postgresql"]
+VOLUME ["/etc/postgresql", "/var/lib/postgresql"]
